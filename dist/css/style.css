@@ -1,0 +1,9 @@
+.main-header .sidebar-toggle:before {
+    content: "";
+}
+
+@media (max-width: 991px) {
+    .navbar-custom-menu > .navbar-nav > li > .dropdown-menu {
+        right: 0;
+    }
+}
