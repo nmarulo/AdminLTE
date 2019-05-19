@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Softn CMS | Dashboard</title>
+        <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+        <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="bower_components/font-awesome/css/all.min.css">
+        <link rel="stylesheet" href="dist/css/AdminLTE.min.css">
+        <link rel="stylesheet" href="dist/css/skins/skin-blue.min.css">
+        <link rel="stylesheet" href="bower_components/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css">
+        <link rel="stylesheet" href="bower_components/bootstrap-daterangepicker/daterangepicker.css">
+        <link rel="stylesheet" href="dist/css/style.css">
+        
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    </head>
+    <body class="hold-transition skin-blue sidebar-mini fixed">
+        <div class="wrapper">
+            <header class="main-header">
+                <a href="#" class="logo">
+                    <span class="logo-mini">SN</span>
+                    <span class="logo-lg"><b>SoftN</b> CMS</span>
+                </a>
+                <nav class="navbar navbar-static-top">
+                    <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
+                        <i class="fa fa-bars"></i>
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </a>
+                    <div class="navbar-custom-menu">
+                        <ul class="nav navbar-nav">
+                            <li class="dropdown notifications-menu">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                    <i class="far fa-bell"></i>
+                                    <span class="label label-warning">10</span>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li class="header">You have 10 notifications</li>
+                                    <li>
+                                        <ul class="menu">
+                                            <li>
+                                                <a href="#">
+                                                    <i class="fa fa-users text-aqua"></i> 5 new members joined today
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="footer">
+                                        <a href="#">View all</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown user user-menu">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                    <img src="dist/img/marulo.jpg" class="user-image" alt="User Image">
+                                    <span class="hidden-xs">Nicolás <i class="fa fa-caret-down"></i></span>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li class="user-header">
+                                        <img src="dist/img/marulo.jpg" class="img-circle" alt="User Image">
+                                        <p>
+                                            Nicolás Marulanda P - Programmer
+                                            <small>Member since Nov. 2012</small>
+                                        </p>
+                                    </li>
+                                    <li class="user-footer">
+                                        <div class="pull-left">
+                                            <a href="#" class="btn btn-default btn-flat">Profile</a>
+                                        </div>
+                                        <div class="pull-right">
+                                            <a href="#" class="btn btn-default btn-flat">Sign out</a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </header>
+            <aside class="main-sidebar">
+                <section class="sidebar">
+                    <ul class="sidebar-menu" data-widget="tree">
+                        <li class="header">Principal</li>
+                        <li>
+                            <a href="#"><i class="fa fa-tachometer-alt"></i>
+                                <span>Dashboard</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-users"></i>
+                                <span>Usuarios</span>
+                            </a>
+                        </li>
+                        <li class="header">Administración</li>
+                        <li>
+                            <a href="#"><i class="fa fa-cogs"></i>
+                                <span>Configuración</span>
+                            </a>
+                        </li>
+                        <li class="treeview">
+                            <a href="#">
+                                <i class="fa fa-users-cog"></i>
+                                <span>Usuarios</span>
+                                <span class="pull-right-container">
+                                    <i class="fa fa-angle-left pull-right"></i>
+                                </span>
+                            </a>
+                            <ul class="treeview-menu">
+                                <li class="active">
+                                    <a href="#"><i class="fa fa-user-circle"></i>
+                                        <span>Perfiles</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fa fa-key"></i>
+                                        <span>Permisos</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    
+                    </ul>
+                </section>
+            </aside>
+            <div class="content-wrapper">
+                <section class="content-header">
+                    <h1>
+                        Usuarios
+                        <small>Gestión de usuarios</small>
+                    </h1>
+                    <ol class="breadcrumb">
+                        <li>
+                            <a href="#"><i class="fa fa-tachometer-alt"></i> Inicio</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-users"></i> Usuarios</a>
+                        </li>
+                        <li class="active">Gestión</li>
+                    </ol>
+                </section>
+                <section class="content">
+                    <div class="box">
+                        <div class="box-body">
+                            <form class="form-horizontal control-label-left row" role="form">
+                                <div class="col-sm-8">
+                                    <div class="form-group">
+                                        <label for="user-name" class="control-label col-md-2">
+                                            Nombre
+                                        </label>
+                                        <div class="col-md-10">
+                                            <input type="text" class="form-control" id="user-name" placeholder="Nombre">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="user-login" class="control-label col-md-2">
+                                            Usuario
+                                        </label>
+                                        <div class="col-md-10">
+                                            <input type="text" class="form-control" id="user-login" placeholder="Usuario">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="user-email" class="control-label col-md-2">
+                                            Email
+                                        </label>
+                                        <div class="col-md-10">
+                                            <input type="email" class="form-control" id="user-email" placeholder="Email">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="user-password" class="control-label col-md-2">
+                                            Contraseña
+                                        </label>
+                                        <div class="col-md-10">
+                                            <input type="password" class="form-control" id="user-password" placeholder="Contraseña">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="user-re-password" class="control-label col-md-2">
+                                            Repetir contraseña
+                                        </label>
+                                        <div class="col-md-10">
+                                            <input type="password" class="form-control" id="user-re-password" placeholder="Repetir contraseña">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="col-md-12">
+                                            <button type="button" class="btn btn-primary btn-block" data-toggle="modal" data-target="#modal-user-password">
+                                                Modificar contraseña
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <button type="submit" class="btn btn-success btn-block">Actualizar/Crear</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <footer class="main-footer">
+                <div class="pull-right hidden-xs">
+                    <b>SoftN CMS</b> - Version 0.5
+                </div>
+                <div>
+                    Diseño base <strong>adminlte</strong>.
+                </div>
+            </footer>
+        </div>
+        <!-- Modals -->
+        <div class="modal fade" id="modal-user-password" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <form id="modal-user-password-form" class="form-horizontal" method="get">
+                        <div class="modal-header">
+                            <h3 class="modal-title text-center">Modificar contraseña</h3>
+                        </div>
+                        <div class="modal-body">
+                            <div class="form-group">
+                                <label for="user-current-password" class="control-label col-md-2">
+                                    Actual
+                                </label>
+                                <div class="col-md-10">
+                                    <input type="password" class="form-control" id="user-current-password" placeholder="Contraseña actual">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="user-new-password" class="control-label col-md-2">
+                                    Nueva
+                                </label>
+                                <div class="col-md-10">
+                                    <input type="password" class="form-control" id="user-new-password" placeholder="Nueva contraseña">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="user-new-re-password" class="control-label col-md-2">
+                                    Repetir
+                                </label>
+                                <div class="col-md-10">
+                                    <input type="password" class="form-control" id="user-new-re-password" placeholder="Repetir nueva contraseña">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <div class="row">
+                                <div class="col-xs-6">
+                                    <button type="button" class="btn btn-primary btn-block" data-dismiss="modal">
+                                        Cancelar
+                                    </button>
+                                </div>
+                                <div class="col-xs-6">
+                                    <button type="submit" class="btn btn-default btn-block">Modificar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <script src="bower_components/jquery/dist/jquery.min.js"></script>
+        <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="bower_components/jquery-slimscroll/jquery.slimscroll.min.js"></script>
+        <script src="dist/js/adminlte.min.js"></script>
+    </body>
+</html>
